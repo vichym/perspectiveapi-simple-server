@@ -32,7 +32,7 @@ fields.
    is in your project's `node_modules`
    `node_modules/@conversationai/perspectiveapi-simple-server/build/server/run_server.js`
 
-*  "googleCloudApiKey": The API key for your google cloud project.
+*  "googleCloudApiKey": The API key for your google cloud project. Please find the API key in the previous README.md of Feedz. 
 
 *  "toxicityAttribute": The name of the attribute to use for toxicity scores. See the [PerspectiveAPI documentation](https://conversationai.github.com/perspectiveapi/) for more details.
 
