@@ -1,21 +1,22 @@
 # A Simple Server for the Perspective API
 
-A simple demo server for use. It serves some static content from a specified directory, and
-provides proxy to the API in a way that enables the API-key to be kept private.
+This is a simple server used to make calls to Persepective API to evaluted comment from [Feedz](https://github.com/NatthaponSoisangwan/django-react). It provides proxy to the API in a way that enables the API-key to be kept private. This server is borrowed from [conversationai](https://github.com/conversationai/perspectiveapi-simple-server). 
 
 ## Quickly trying it out
-
+Follow the steps below: 
 ```
 # Install dependencies
 yarn install
+
 # Make sure the build directory is setup (has at least a copy of the template config)
 yarn run setup
+
 # Build the code (in build/)
 yarn run build
+
 # Start a dev server locally on port 8080
 yarn run start-dev
 ```
-
 Now you can visit `http://localhost:8080/` and you should get a "hello world!" page.
 
 ## Configuring the server
@@ -37,7 +38,7 @@ fields.
 
 *  "recaptchaConfig": An optional configuration for enabling reCAPTCHA v3 verification.
     This is empty by default. The requisite fields for this option are `secretKey` and
-    `threshold`. See the `Config` interface in `serving.ts` for more details.
+    `threshold`. See the `Config` interface in `serving.ts` for more details. We will not need this for this development stage. 
 
 Note: The following can be done with npm as well as yarn, but yarn is
 recommended.
@@ -58,5 +59,4 @@ node node_modules/@conversationai/perspectiveapi-simple-server/build/server/run_
 ```
 
 ## Notes
-
-This is example code to help experimentation with the Perspective API; it is not an official Google product.
+This is example code to help experimentation with the Perspective API; it is not an official Google product. 
